@@ -77,9 +77,9 @@ is_even(a)
 #  vowelCount <- 0
 #  consonantCount <- 0
 #  vowels <- ["a", "e", "i", "o", "u"]
-#  FOR letter IN word
+#  FOR ch IN word
 #  {
-#   IF(letter in vowels)
+#   IF(ch in vowels)
 #   {
 #    vowelCount += 1
 #   }
@@ -88,7 +88,25 @@ is_even(a)
 #    consonantCount += 1
 #   }
 #  }
-#  RETURN(f"There are {vowelCount} vowels and {consonantCount} consonants")
+#  statement <- f"There are {vowelCount} vowels and {consonantCount} consonants"
+#  RETURN(statement)
 #  }
 # }
 
+# analyze_word(word)
+# print(statement)
+
+def analyze_word(word):
+    vowelCount = 0
+    consonantCount = 0
+    vowels = ["a", "e", "i", "o", "u"]
+    for ch in word:
+        if ch in vowels:
+            vowelCount += 1
+        else:
+            consonantCount += 1
+    statement = f"There are {vowelCount} vowels and {consonantCount} consonants."
+    return statement
+
+analyze_word(word)
+print(statement)
