@@ -94,7 +94,7 @@ is_even(a)
 # }
 
 # analyze_word(word)
-# print(statement)
+# DISPLAY(statement)
 
 def analyze_word(word):
     vowelCount = 0
